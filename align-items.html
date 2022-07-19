@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fundamentos- Align Items</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .flex-container{
+                max-width: 350px;
+                display: flex;
+                border: 1px solid black;
+            }
+
+            .items{
+                background-color: blueviolet;
+                margin: 5px;
+                color: white;
+                text-align: center;
+                flex: 1;
+            }
+
+            .flex{
+                flex: 1;
+            }
+            .center{
+                align-items: center;
+            }
+
+            .stretch{
+                align-items: stretch;
+            }
+
+            .flex-start{
+                align-items: flex-start;
+            }
+
+            .flex-end{
+                align-items: flex-end;
+
+            }
+
+            .column{
+                flex-direction: column;
+            }
+         
+            .baseline{
+                align-items: baseline;
+            }
+
+            </style>
+
+         
+    </head>
+    <body>
+        <h1> Row</h1>
+        <h3> Center</h3>
+        <section class="flex-container center flex">
+            <div class="items">1 </div>
+            <div class="items"> Item número 2</div>
+            <div class="items"> 3</div>
+        </section>
+    
+        <h3> Stretch</h3>
+        <section class="flex-container stretch flex">
+            <div class="items">1 </div>
+            <div class="items"> Item número 2 com mais conteúdo</div>
+            <div class="items"> 3</div>
+            </section>
+
+            <h3> Flex Start</h3>
+            <section class="flex-container flex-start flex">
+                <div class="items">1 </div>
+                <div class="items"> Item número 2 com mais conteúdo</div>
+                <div class="items"> 3</div>
+                </section>
+
+                <h3> Flex End</h3>
+                <section class="flex-container flex-end flex">
+                    <div class="items">1 </div>
+                    <div class="items"> Item número 2 com mais conteúdo</div>
+                    <div class="items"> 3</div>
+                    </section>
+
+
+                    <h3> Baseline</h3>
+                    <section class="flex-container baseline flex">
+                        <div class="items"><br> 1 </div>
+                        <div class="items"> Item número 2 com mais conteúdo</div>
+                        <div class="items"> 3</div>
+                        </section>
+                <h1> Column</h1>
+
+                <h3> Center</h3>
+        <section class="flex-container center flex column">
+            <div class="items">1 </div>
+            <div class="items"> Item número 2</div>
+            <div class="items"> 3</div>
+        </section>
+    
+        <h3> Stretch</h3>
+        <section class="flex-container stretch flex column">
+            <div class="items">1 </div>
+            <div class="items"> Item número 2 com mais conteúdo</div>
+            <div class="items"> 3</div>
+            </section>
+
+            <h3> Flex Start</h3>
+            <section class="flex-container flex-start flex column">
+                <div class="items">1 </div>
+                <div class="items"> Item número 2 com mais conteúdo</div>
+                <div class="items"> 3</div>
+                </section>
+
+                <h3> Flex End</h3>
+                <section class="flex-container flex-end flex column">
+                    <div class="items">1 </div>
+                    <div class="items"> Item número 2 com mais conteúdo</div>
+                    <div class="items"> 3</div>
+
+            </section>
+            
+            <h3> Baseline</h3>
+            <section class="flex-container baseline column flex">
+                <div class="items"><br> 1 </div>
+                <div class="items"> Item número 2 com mais conteúdo</div>
+                <div class="items"> 3</div>
+                </section>
+        </body>
+</html>
